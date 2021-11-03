@@ -111,15 +111,36 @@ int main(void)
                     printf("결과값 : %d원 입니다.\n", result_value2);
                     break;
                 }
+                eelse if (way3 == 3)
+                {
+                    printf("========================================================================\n");
+                    printf("바꿀 원화을 입력해주세요");
+                    scanf_s("%d", &won);
+                    result_value3 = won / exchange_mate;
+
+                    printf("결과값 : %d엔 입니다.\n", result_value3);
+                    break;
+                }
+                else if (way3 == 4)
+                {
+                    printf("========================================================================\n");
+                    printf("바꿀 엔화을 입력해주세요");
+                    scanf_s("%d", &won);
+                    result_value4 = exchange_mate * won;
+
+                    printf("결과값 : %d엔 입니다.\n", result_value4);
+                    break;
+                }
                 else
                 {
                     printf("다시 입력해주세요.");
                     continue;
                 }
+
             }
 
         }
-    
+
     }
 
 }
